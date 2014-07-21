@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jeu>
+	<nom>Une visite a Paris</nom>
+	<dateDebut>02/07/2014</dateDebut>
+	<dateFin>03/07/2015</dateFin>
+	<description>Un petite balade insolite a Paris sous forme de jeu, qui vous permettra de decouvrir des lieux insolites.\n Cette visite se deroulera dans les environs de Chatelet, l'Ile de Saint-Louis et L'ile de la cité.</description>
+	<depart>
+		<indice> Le point de départ est fixé à la place du Chatelet</indice>
+		<latitude>48.8589053803</latitude>
+		<longitude>2.34865278029</longitude>
+	</depart>
+	<arrivee>
+		<indice>Inauguré en 1977, il accueil plus de 5,3 millions visiteurs en 2012. Au sein du musée national d'Art moderne / centre de création industrielle (MNAM / CCI), il conserve l'une des trois plus importantes collections d'art moderne et contemporain au monde.</indice>
+		<aide>Centre national d’art et de culture</aide>
+		<latitude>48.860653</latitude>
+		<longitude>2.352411</longitude> 
+	</arrivee>
+	<etape>
+		<indice>"Dieu me garde de quatre maisons,\nDe la taverne,\ndu Lombard,\nDe l'hospital et de la prison."\nGabriel Meurier, Trésor des Sentences, xvie siècle.\n Le lieu est un clin d'oeil, au pays des volcans.
+		</indice>
+		<aide>Nous cherchons un restaurant dans une rue.</aide>
+		<nbr_reponse>2</nbr_reponse>
+		<reponse>lombards, auvergne</reponse>
+		<latitude>48.859102</latitude>
+		<longitude>2.349755</longitude> 
+	</etape>
+	<etape>
+		<indice>Étienne Marcel fait l'acquisition de la « Maison aux Piliers » au nom de la municipalité en juillet 1357. Ancienne place de Grève, elle est rebaptisée en 1982 en un espace réservé aux piétons.</indice>
+		<aide>La maison de la ville</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>hotel de ville, place de la liberation</reponse>
+		<latitude>48.856540</latitude>
+		<longitude>2.351778</longitude>
+	</etape>
+	<etape>
+		<indice>Anciennement appelé passerelle de Grève pendant ses deux premières années, son nom actuelle viens d'une bataille remportée par Napoléon Bonaparte sur les Autrichiens en 1796. </indice>
+		<aide>Nous rechercons un pont</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>pont d'arcole</reponse>
+		<latitude>48.855833</latitude>
+		<longitude>2.350833</longitude>	
+	</etape>
+	<etape>
+		<indice>Situé à une cinquantaine de mètres devant l'entrée de Notre-Dame. Elle est matérialisée dans les pavés du parvis de la cathédrale sous la forme d'une rose des vents gravée au centre d'un médaillon octogonal en bronze</indice>
+		<aide>Point Zéro</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>zeêro, point zéro</reponse>
+		<latitude>48.853402</latitude>
+		<longitude>2.348785</longitude>	
+	</etape>
+	<etape>
+		<indice>À cet emplacement se trouvait, au Moyen Âge, un terrain vague que l'on appelait  : Motte aux Papelards ou simplement le Terrein, où s'égayait tout le personnel de l'église. En 2011, Woody Allen y tourna une partie d'une film Minuit à Paris.</indice>
+		<aide>un square</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>square jean 23</reponse>
+		<latitude>48.8525</latitude>
+		<longitude>2.35139</longitude>	
+	</etape>
+	<etape>
+		<indice>Inauguré le 12 avril 1962 par le général de Gaulle. Œuvre de l'architecte Georges-Henri Pingusson. Annuellement, le dernier dimanche d'avril, le lieu accueille la Journée du souvenir des martyrs et des héros de la déportation.</indice>
+		<aide> un lieu de mémoire</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>mémorial des martyrs de la deportation</reponse>
+		<latitude>48.851750</latitude>
+		<longitude>2.352378</longitude>
+	</etape>
+	<etape>
+		<indice> Il portait en l'an XII le nom de quai Catinat et quelque temps après, il fut renommé en raison du voisinage avec l'ancien Archevêché de Paris. Ce lieu sépare le square Jean-XXIII (à l’ouest) du square de l’Île-de-France (à l’est).</indice>
+		<aide> un quai</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>Quai de l'Archevêché</reponse>
+		<latitude> </latitude>
+		<longitude></longitude>
+	</etape>
+	<etape>
+		<indice>Construit par Christophe Marie et achevé en 1634,Il franchissait la Seine en oblique, dans l’axe du quai d’Orléans à la rue des Ursins. Endommagé par la débâcle de 1709, il fut détruit en 1710. Apres plusieurs constructions et destructions, en 1968,il voit le jour, et est inauguré en 1970.</indice>
+		<aide>un pont enjambant la seine</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>Pont Saint-Louis</reponse>
+		<latitude>48.852778</latitude>
+		<longitude>2.352222</longitude>	
+	</etape>
+	<etape>
+		<indice>Ouverte vers 1635-1636 par Claude Le Ragois de Bretonvilliers, propriétaire des terrains attenants, qui y fait construire son hôtel particulier sur les plans de Jean Androuet du Cerceau. Il sera détruit en 1874 pour la construction du pont de Sully. Cette rue présente la particularité d'avoir un porche à une extrémité lui permettant ainsi de communiquer avec la rue Saint-Louis-en-l'Île. Ce porche est le pavillon, seul bâtiment ayant été conservé de l'Hôtel de Bretonvilliers.</indice>
+		<aide>un element a l'extremité de la rue</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>le porche</reponse>
+		<latitude>48.850888</latitude>
+		<longitude>2.358984</longitude>
+	</etape>
+	<etape>
+		<indice>Situé sur la pointe amont de l'île Saint-Louis. D'une forme triangulaire, il est délimité sur ses côtés sud et nord-est par les bras de la Seine, et sur son côté nord-ouest par le boulevard Henri-IV. En son milieu un momument de Laurent Marqueste, est inauguré le 18 juin 1894</indice>
+		<aide>un monument a la gloire du sculpteur</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>Square Barye</reponse>
+		<latitude>48.849972</latitude>
+		<longitude>2.359778</longitude>	
+	</etape>
+	<etape>
+		<indice>L'edifice construit de 1614 à 1635, par l'ingénieur-entrepreneur Christophe Marie,  en fait l'un des plus anciens Paris.</indice>
+		<aide>un pont</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>Pont Marie</reponse>
+		<latitude>48.852778</latitude>
+		<longitude>2.3575</longitude>
+	</etape>
+	<etape>
+		<indice>édifice religieux construit au xviie siècle par les architectes jésuites Étienne Martellange et François Derand, sur ordre de Louis XIII.La première pierre de est posée par le Cardinal de Richelieu en 1627 pour la Maison Professe que les Jésuites occupent à proximité.</indice>
+		<aide>un edifice religieux</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>Église Saint-Paul-Saint-Louis, Église Saint-Paul</reponse>
+		<latitude>48.8546</latitude>
+		<longitude>2.361417</longitude>	
+	</etape>
+	<etape>
+		<indice>Cette rue existe déjà au xiiie siècle sous le nom de « rue de Percée », nom encore gravé sur les murs à chacune de ses extrémités. Son nom actuel lui est donné en 1877 en souvenir du bâtisseur de la Bastille.</indice>
+		<aide> le nom de cette rue</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>rue du prevot</reponse>
+		<latitude>48.855199</latitude>
+		<longitude>2.360046</longitude>
+	</etape>
+	<etape>
+		<indice>Hôtel particulier, édifié à partir de 1655 dans le quartier du Marais. Il est classé au titre des monuments historiques en 1966. Restauré, sous la direction de Bernard Fonquernie architecte en chef des monuments historiques, il accueille depuis 2004 la Cour administrative d’appel de Paris.</indice>
+		<aide>Le nom de l'edifice</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>Hôtel de Beauvais, hotel de Beauvais</reponse>
+		<latitude>48.855194</latitude>
+		<longitude>2.3583</longitude>
+	</etape>
+	<etape>
+		<indice>Bâtie sur les fondations du premier bâtiment connu rive droite à Paris, à savoir une basilique dont on trouve l'existence dès la fin du IVe siècle, elle constitue de ce fait la plus ancienne paroisse sur la rive droite de la Seine. Commencée en 1494, s'est déroulée sur une période de 150 ans environ.</indice>
+		<aide>un edifice religieux</aide>
+		<nbr_reponse>1</nbr_reponse>
+		<reponse>Église Saint-Gervais-Saint-Protais, eglise saint gervais, Eglise Saint-Gervais</reponse>
+		<latitude>48.855556</latitude>
+		<longitude>2.354444</longitude>
+	</etape>
+</jeu>

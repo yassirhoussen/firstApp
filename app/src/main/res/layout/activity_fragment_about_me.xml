@@ -1,0 +1,387 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/downtown"
+    tools:context="com.app.birudo.birudo.Corpus.FragmentAboutMe">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="170px"
+        android:id="@+id/birudo"
+        android:src="@drawable/birudonom"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-100px"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="200px"-->
+    <!--android:layout_height="150px"-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:src="@drawable/playstoretransparent"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentTop="true" />-->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/Birudobrown"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/birudo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
+
+    <TextView
+        android:layout_width="450px"
+        android:layout_height="160px"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/about_me_message"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/birudo"
+        android:layout_marginTop="105dp"
+        android:id="@+id/Info" />
+
+    <RelativeLayout
+        android:layout_width="400px"
+        android:layout_height="375px"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view"
+        android:layout_toRightOf="@+id/Info"
+        android:layout_alignTop="@+id/Info">
+
+        <ImageView
+            android:layout_width="158px"
+            android:layout_height="148px"
+            android:id="@+id/imageUser"
+            android:src="@drawable/user"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30px"
+            android:layout_below="@id/imageUser"
+            android:text="Image de profil"
+            android:textColor="@color/Birudobrown"
+            android:textSize="12sp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Info"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/Rlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/scrollView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="60px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/Linear"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre nom :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/NomText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Nom"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/NomEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre Prénom :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/PrenomText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Prenom"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/PrenomEdit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre pseudo :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/pseudoText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Pseudo"
+                android:editable="false"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/pseudoEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre date d'inscription :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/inscriptionText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:editable="false"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/inscriptionEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre date de naissance : (jj/mm/aaaa)"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/birthdayText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text=""
+                android:editable="false"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/dateEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre lieu de naissance :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/birthCityText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Lieu de naissance"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/birthCityEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre e-mail :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/emailText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/emailEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre addresse :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/addressText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="123, rue de la grande joie"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/addressEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre code postale et ville :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/cpText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="99999, HappyCity"
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/cpEdit"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Civilité :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/civilititeText" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr"
+                    android:textColor="@color/BirudoRose"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:id="@+id/checkMr"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mme/Mlle"
+                    android:textColor="@color/BirudoRose"
+                    android:id="@+id/checkMme"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inc"
+                    android:textColor="@color/BirudoRose"
+                    android:id="@+id/checkUnknown"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Votre description :"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/BirudoRose"
+                android:id="@+id/descriptionText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Lorem ipsum dolor sit amet, \nconsectetur adipisicing elit, sed do eiusmod tempor \n incididunt ut labore et dolore magna aliqua."
+                android:textColorHint="@color/black"
+                android:textColor="@color/Black"
+                android:ems="10"
+                android:id="@+id/descriptionEdit"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valider vos modifications"
+                android:id="@+id/validate"
+                android:layout_below="@+id/Linear"
+                android:layout_gravity="center_horizontal" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

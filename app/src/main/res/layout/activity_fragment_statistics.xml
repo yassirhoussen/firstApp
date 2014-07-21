@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/downtown"
+    tools:context="com.app.birudo.birudo.Corpus.FragmentStatistics">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150px"
+        android:id="@+id/birudo"
+        android:src="@drawable/birudotransparent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-100px" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="150px"
+        android:id="@+id/imageView"
+        android:src="@drawable/playstoretransparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black"
+        android:layout_marginTop="20px"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="just a dummy test"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="37sp"/>
+
+</RelativeLayout>

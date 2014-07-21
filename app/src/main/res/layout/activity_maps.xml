@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/downtown"
+    tools:context="com.app.birudo.birudo.Corpus.MapsActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="170px"
+        android:id="@+id/birudo"
+        android:src="@drawable/birudonom"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-100px"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="120px"
+        android:id="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/Birudobrown"
+        android:layout_marginTop="10px"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/viewSeparator"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/viewSeparator"
+        android:layout_marginTop="20px"
+        android:layout_height="275dp"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/Birudobrown"
+        android:layout_marginTop="20px"
+        android:layout_below="@+id/map"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/viewSeparator2"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300px"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_marginTop="10px"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/viewSeparator2">
+
+        <RelativeLayout
+            android:id="@+id/Rlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignTop="@+id/scrollView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60px"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/Linear"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Indice : "
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/BirudoRose"
+                    android:id="@+id/indice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@color/BlanchedAlmond"
+                    android:text="Applicake chocolate bar candy canes. Lemon drops caramels liquorice candy canes lollipop topping. Unerdwear.com bonbon liquorice"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/black"
+                    android:id="@+id/indiceText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:hint="Réponse ... "
+                    android:layout_marginTop="10px"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/Black"
+                    android:ems="10"
+                    android:id="@+id/reponseEdit"
+                    android:layout_gravity="center_horizontal" />
+
+                <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:text="Aide"
+                        android:textColor="@color/White"
+                        android:id="@+id/helpButton"
+                        android:gravity="center"
+                        android:layout_marginTop="10px"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/translucent_black"
+                        android:layout_below="@+id/imageUser"
+                        android:layout_gravity="right" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:text="Valider"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="10px"
+                        android:id="@+id/validateButton"
+                        android:gravity="center"
+                        android:background="@color/translucent_black"
+                        android:layout_below="@+id/imageUser"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<ImageView-->
+        <!--android:layout_width="158px"-->
+        <!--android:layout_height="148px"-->
+        <!--android:id="@+id/imageUser"-->
+        <!--android:src="@drawable/user"-->
+        <!--android:layout_below="@+id/map"-->
+        <!--android:layout_marginTop="20px"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_alignTop="@+id/scrollView"-->
+        <!--android:layout_alignRight="@+id/map"-->
+        <!--android:layout_alignEnd="@+id/map" />-->
+
+</RelativeLayout>
+
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/map"-->
+    <!--tools:context="com.app.birudo.birudo.Corpus.MapsActivity"-->
+    <!--android:name="com.google.android.gms.maps.SupportMapFragment"/>-->
